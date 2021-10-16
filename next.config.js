@@ -5,6 +5,7 @@ const config = {
     API: process.env.API,
     STATIC: process.env.STATIC,
   },
+  webpack5: false,
   webpack: (config) => {
     // Fixes npm packages that depend on `fs` module
     config.node = {

@@ -2,7 +2,7 @@ import { redirect } from '../../../main/navigation/navigation.core';
 
 export const authRedirectLogged = (ctx: any, pathToRedirect: string) => {
   const { res, token = null } = ctx;
-
+  console.log('Auth redirect logged context: ', ctx);
   if (token) {
     if (res) {
       res.writeHead(302, {
